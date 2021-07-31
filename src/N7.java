@@ -8,7 +8,10 @@ public class N7 {
             case '2':
             case '3':
             case '4':
-                System.out.println(a + " программиста");
+                if (args[0].length() > 1 && args[0].charAt(args[0].length() - 2) == '1')
+                    System.out.println(a + " программистов");
+                else
+                    System.out.println(a + " программиста");
                 break;
             default:
                 System.out.println(a + " программистов");
