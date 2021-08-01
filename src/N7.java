@@ -9,7 +9,7 @@ public class N7 {
                 return;
             }
         }
-        switch (s.charAt(args[0].length() - 1)){
+        switch (s.charAt(s.length() - 1)){
             case '1':
                 System.out.println(a + " программист");
                 break;
