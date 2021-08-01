@@ -1,17 +1,22 @@
 public class N7 {
     public static void main(String[] args) {
         int a = Integer.parseInt(args[0]);
-        switch (args[0].charAt(args[0].length() - 1)){
+        String s = args[0];
+        if (s.length() > 1 && s.charAt(s.length() - 2) == '1'){
+            int y = Integer.parseInt(Character.toString(s.charAt(s.length() - 1)));
+            if (y >= 1 && y <= 4){
+                System.out.println(a + " программистов");
+                return;
+            }
+        }
+        switch (s.charAt(args[0].length() - 1)){
             case '1':
                 System.out.println(a + " программист");
                 break;
             case '2':
             case '3':
             case '4':
-                if (args[0].length() > 1 && args[0].charAt(args[0].length() - 2) == '1')
-                    System.out.println(a + " программистов");
-                else
-                    System.out.println(a + " программиста");
+                System.out.println(a + " программиста");
                 break;
             default:
                 System.out.println(a + " программистов");
