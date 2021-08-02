@@ -17,6 +17,8 @@ public class N1 {
             case 3:
                 System.out.println("число трёхзначное");
                 break;
+            default:
+                System.out.println("более");
         }
     }
 }
